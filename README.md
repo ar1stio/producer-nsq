@@ -1,6 +1,6 @@
 # publisher
 
-COMMAND : go run booking.go <br />
+COMMAND : go run main.go <br />
 
 POST : /booking <br />
 JSON BODY example : {
@@ -9,4 +9,4 @@ JSON BODY example : {
 } <br />
 
 # consumer
-go run notification.go
+go run main.go
