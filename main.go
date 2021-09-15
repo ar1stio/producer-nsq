@@ -65,9 +65,8 @@ func RequestBooking(w http.ResponseWriter, r *http.Request) {
 }
 
 func SendMessage(booking Booking) {
-	config := nsq.NewConfig()
-	// p, err := nsq.NewProducer("127.0.0.1:4150", config)
-	p, err := nsq.NewProducer("68.183.237.182:4150", config)
+	config := nsq.NewConfig()	
+	p, err := nsq.NewProducer("Your Link Connection / IP", config)
 
 	if err != nil {
 		failOnError(err, "Failed to create producer")
